@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Ecommerce Page</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__logo">
+        <div class="header__icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <img src="./images/logo.svg" alt="">
+      </div>
+  
+      <ul class="header__nav">
+        <li class="nav__item"><a href="#">Collections</a></li>
+        <li class="nav__item"><a href="#">Men</a></li>
+        <li class="nav__item"><a href="#">Women</a></li>
+        <li class="nav__item"><a href="#">About</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+      </ul>
+  
+    </div>
+    
+    <div class="header__cart">
+      <div class="cart__item">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+      <div class="cart__author">
+        <img src="./images/image-avatar.png" alt="">
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="main__img">
+        <img src="./images/image-product-1.jpg" alt="">
+        <ul class="sub-img">
+          <li class="img-item active-img">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="">
+            <div class="blur-img"></div>
+          </li>
+          <li class="img-item ">
+            <img src="./images/image-product-2-thumbnail.jpg" alt="">
+            <div class="blur-img"></div>
+          </li>
+          <li class="img-item ">
+            <img src="./images/image-product-3-thumbnail.jpg" alt="">
+            <div class="blur-img"></div>
+          </li>
+          <li class="img-item ">
+            <img src="./images/image-product-4-thumbnail.jpg" alt="">
+            <div class="blur-img"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main__content">
+        <h4>sneaker company</h4>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>These low-profile sneakers are you perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+        <h2>$125.00 <span>50%</span></h2>
+        <h3>$250.00</h3>
+        <div class="btn-container">
+          <div>
+            <i class="fa-solid fa-minus"></i>
+            <span id="valueItem">0</span>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <button><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="sub-menu">
+    <div class="container">
+      <ul class="header__nav">
+        <li class="nav__item"><a href="#">Collections</a></li>
+        <li class="nav__item"><a href="#">Men</a></li>
+        <li class="nav__item"><a href="#">Women</a></li>
+        <li class="nav__item"><a href="#">About</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+      </ul>
+      <div class="sub-menu__close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="container">
+      <h4>Cart</h4>
+      <div class="modal__content">
+        <p class="empty-item">Your cart is empty</p>
+        <div class="modal-item hide">
+          <div class="container">
+            <img src="./images/image-product-1.jpg" alt="">
+            <div class="modal-item__text">
+              <p>Fall Limited Edition Sneakers</p>
+              <!-- <p>$125.00 x 3 $375.00</p> -->
+            </div>
+            <div class="trash">
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+          <button>Checkout</button>
+        </div>
+      </div>
+      <div class="icon-close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
